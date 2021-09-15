@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет магазин МиоКерамика</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <img
+            class="main-nav__logo"
+            src="img/main-nav/Group.svg"
+            alt="МиоКерамика"
+            width="115"
+            height="10"
+          />
+          <div class="main-nav__toggle">
+            <div class="main-nav__toggle-item"></div>
+          </div>
+          <form class="main-nav__form" action="post">
+            <input class="main-nav__form-input" type="text" />
+            <button class="main-nav__form-button" type="submit">
+              <img
+                class="main-nav__form-button-icon"
+                src="img/main-nav/search.svg"
+                alt="Иконка поиска"
+                width="20"
+                height="20"
+              />
+            </button>
+          </form>
+        </div>
+        <div class="main-nav__menu main-nav__menu--nojs">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Дизайн</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Контакты</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Гарантии</a>
+            </li>
+          </ul>
+          <button
+            class="main-nav__menu-button-close button"
+            type="button"
+          ></button>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин МиоКерамика</h1>
+      <section class="promo">
+        <div class="promo__wrapper wrapper">
+          <div class="promo__content">
+            <h2 class="promo__title">
+              Задайте тон своему
+              <span class="promo__title-bold">интерьеру</span>
+            </h2>
+            <p class="promo__slogan page-body__slogan">
+              238 изотоп урана ферментативно<br />
+              собой полимерный анод
+            </p>
+            <div class="promo__button-wrapper">
+              <a href="#" class="promo__button button">design</a>
+              <a href="#" class="promo__button button promo__button--background"
+                >shop</a
+              >
+            </div>
+          </div>
+          <div class="promo__slider">
+            <ul class="promo__slider-list">
+              <li class="promo__slider-item promo__slider-item-first">
+                <img
+                  src="img/promo/bathroom-first.jpg"
+                  alt="Изображение ванной комнаты"
+                  class="promo__slider-image"
+                  width="320"
+                  height="200"
+                />
+              </li>
+              <li
+                class="
+                  promo__slider-item promo__slider-item-second
+                  visually-hidden
+                "
+              >
+                <img
+                  class="promo__slider-image"
+                  src="img/promo/bathroom-second.jpg"
+                  alt="Изображение ванной комнаты"
+                  width="320"
+                  height="200"
+                />
+              </li>
+              <li
+                class="
+                  promo__slider-item promo__slider-item-third
+                  visually-hidden
+                "
+              >
+                <img
+                  class="promo__slider-image"
+                  src="img/promo/room.jpg"
+                  alt="Изображение гостиной"
+                  width="320"
+                  height="200"
+                />
+              </li>
+              <li
+                class="
+                  promo__slider-item promo__slider-item-fourth
+                  visually-hidden
+                "
+              >
+                <img
+                  class="promo__slider-image"
+                  src="img/promo/bathroom-second.jpg"
+                  alt="Изображение ванной комнаты"
+                  width="320"
+                  height="200"
+                />
+              </li>
+              <li
+                class="
+                  promo__slider-item promo__slider-item-fifth
+                  visually-hidden
+                "
+              >
+                <img
+                  class="promo__slider-image"
+                  src="img/promo/room.jpg"
+                  alt="Изображение гостиной"
+                  width="320"
+                  height="200"
+                />
+              </li>
+              <li
+                class="
+                  promo__slider-item promo__slider-item-sixth
+                  visually-hidden
+                "
+              >
+                <img
+                  class="promo__slider-image"
+                  src="img/promo/bathroom-second.jpg"
+                  alt="Изображение ванной комнаты"
+                  width="320"
+                  height="200"
+                />
+              </li>
+            </ul>
+            <ul class="promo__slider-toogle-list">
+              <li class="promo__slider-toogle-item">
+                <button
+                  class="
+                    promo__slider-toogle-button
+                    promo__slider-toogle-button-first
+                    promo__slider-toogle-button--current
+                  "
+                ></button>
+              </li>
+              <li class="promo__slider-toogle-item">
+                <button
+                  class="
+                    promo__slider-toogle-button
+                    promo__slider-toogle-button-second
+                  "
+                ></button>
+              </li>
+              <li class="promo__slider-toogle-item">
+                <button
+                  class="
+                    promo__slider-toogle-button
+                    promo__slider-toogle-button-third
+                  "
+                ></button>
+              </li>
+              <li class="promo__slider-toogle-item">
+                <button
+                  class="
+                    promo__slider-toogle-button
+                    promo__slider-toogle-button-fourth
+                  "
+                ></button>
+              </li>
+              <li class="promo__slider-toogle-item">
+                <button
+                  class="
+                    promo__slider-toogle-button
+                    promo__slider-toogle-button-fifth
+                  "
+                ></button>
+              </li>
+              <li class="promo__slider-toogle-item">
+                <button
+                  class="
+                    promo__slider-toogle-button
+                    promo__slider-toogle-button-sixth
+                  "
+                ></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="our-designs">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Наши дизайны</h2>
+          <ul class="our-designs__list">
+            <li class="our-designs__item">
+              <div class="our-designs__item-content">
+                <h3 class="our-designs__heading">
+                  Дизайн<br />
+                  ванных комнат
+                </h3>
+                <p class="our-designs__text page-body__slogan">
+                  238 изотоп урана ферментативно<br />
+                  собой полимерный анод
+                </p>
+                <div class="our-designs__button-wrapper">
+                  <img
+                    class="our-design__link-icon"
+                    src="img/our-designs/link.svg"
+                    alt="Ссылка на наши работы"
+                    width="80"
+                    height="80"
+                  />
+                  <a href="" class="our-designs__button"
+                    >Посмотреть наши работы</a
+                  >
+                </div>
+              </div>
+              <img
+                class="our-designs__image"
+                src="img/our-designs/bathroom-second.jpg"
+                alt="Изображение Ванной комнаты"
+                width="320"
+                height="200"
+              />
+            </li>
+            <li class="our-designs__item">
+              <div class="our-designs__item-content">
+                <h3 class="our-designs__heading">
+                  Дизайн<br />
+                  гостиных комнат
+                </h3>
+                <p class="our-designs__text page-body__slogan">
+                  238 изотоп урана ферментативно<br />
+                  собой полимерный анод
+                </p>
+                <div class="our-designs__button-wrapper">
+                  <img
+                    class="our-design__link-icon"
+                    src="img/our-designs/link.svg"
+                    alt="Ссылка на наши работы"
+                    width="80"
+                    height="80"
+                  />
+                  <a href="#" class="our-designs__button"
+                    >Посмотреть наши работы</a
+                  >
+                </div>
+              </div>
+              <img
+                class="our-designs__image"
+                src="img/our-designs/room.jpg"
+                alt="Изображение гостиной"
+                width="320"
+                height="200"
+              />
+            </li>
+            <li
+              class="
+                our-designs__item our-designs__item--hidden
+                visually-hidden
+              "
+            >
+              <div class="our-designs__item-content">
+                <h3 class="our-designs__heading">
+                  Дизайн<br />
+                  ванных комнат
+                </h3>
+                <p class="our-designs__text page-body__slogan">
+                  238 изотоп урана ферментативно<br />
+                  собой полимерный анод
+                </p>
+                <div class="our-designs__button-wrapper">
+                  <img
+                    class="our-design__link-icon"
+                    src="img/our-designs/link.svg"
+                    alt="Ссылка на наши работы"
+                    width="80"
+                    height="80"
+                  />
+                  <a href="#" class="our-designs__button"
+                    >Посмотреть наши работы</a
+                  >
+                </div>
+              </div>
+              <img
+                class="our-designs__image"
+                src="img/our-designs/bathroom-second.jpg"
+                alt="Изображение Ванной комнаты"
+                width="320"
+                height="200"
+              />
+            </li>
+            <li
+              class="
+                our-designs__item our-designs__item--hidden
+                visually-hidden
+              "
+            >
+              <div class="our-designs__item-content">
+                <h3 class="our-designs__heading">
+                  Дизайн<br />
+                  гостиных комнат
+                </h3>
+                <p class="our-designs__text page-body__slogan">
+                  238 изотоп урана ферментативно<br />
+                  собой полимерный анод
+                </p>
+                <div class="our-designs__button-wrapper">
+                  <img
+                    class="our-design__link-icon"
+                    src="img/our-designs/link.svg"
+                    alt="Ссылка на наши работы"
+                    width="80"
+                    height="80"
+                  />
+                  <a href="#" class="our-designs__button"
+                    >Посмотреть наши работы</a
+                  >
+                </div>
+              </div>
+              <img
+                class="our-designs__image"
+                src="img/our-designs/room.jpg"
+                alt="Изображение гостиной"
+                width="320"
+                height="200"
+              />
+            </li>
+          </ul>
+          <div class="our-designs__button-show-more-wrapper">
+            <button class="our-designs__button-show-more button" type="button">
+              Другие работы
+            </button>
+            <a href="#" class="our-designs__button-link-shop button"
+              >Перейти в интернет магазин</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper">
+        <section class="contacts">
+          <h3 class="contacts__title page-footer__title">Контакты</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__content">
+                <a class="contacts__link" href="tel:88314205010"
+                  >Единый телефон: 8 (831) 420 - 50 - 10</a
+                >
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__content">
+                <a class="contacts__link" href="mailto:miokeramika@mail.ru"
+                  >E-mail: miokeramika@mail.ru</a
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="addresses">
+          <h3 class="page-footer__title">Адреса магазинов</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">ул. Пискунова, 21/2</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">ул. Ижорская, 18</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">ул. Белинского, 11/66</p>
+            </li>
+          </ul>
+        </section>
+        <section class="working-hours">
+          <h3 class="page-footer__title">Время работы</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">Пн - Пт: 10:00 - 19:00</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">Сб: 10:00 - 18:00</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">Вс: выходной</p>
+            </li>
+          </ul>
+        </section>
+        <section class="socials">
+          <h3 class="visually-hidden">Мы в социальных сетях</h3>
+          <div class="socials__item">
+            <a href="#" class="socials__item-link">
+              <p class="socials__text">Мы в Instagram</p>
+              <img
+                src="img/socials/instagram.svg"
+                alt="Instagram"
+                class="social__icon"
+                width="20"
+                height="20"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="copyright">
+          <h3 class="visually-hidden">Авторское право</h3>
+          <a href="" class="copyright__confidentiality-link"
+            ><p class="copyright__confidentiality-text">
+              Политика коденфициальности
+            </p></a
+          >
+          <p class="copyright__content">© 2009 - 2021 Миокерамика</p>
+        </section>
+        <section class="page-footer__menu">
+          <h3 class="visually-hidden">Навигация по меню</h3>
+          <nav class="page-footer__nav">
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Главная</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Каталог</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Дизайн</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Доставка</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Гарантии</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">О нас</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/showmore.js"></script>
+  </body>
+</html>

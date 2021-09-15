@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src: local("Playfair Display"), url("../fonts/playfair-display.woff2"),
+    url("../fonts/playfair-display.woff");
+}
+
+@font-face {
+  font-family: "Playfair Display Bold";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+
+  src: local("Playfair Display Bold"),
+    url("../fonts/PlayfairDisplay-Bold.woff2"),
+    url("../fonts/PlayfairDisplay-Bold.woff");
+}
+
+@font-face {
+  font-family: "Playfair Display Italic";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+
+  src: local("Playfair Display Italic"),
+    url("../fonts/PlayfairDisplay-Italic.woff2"),
+    url("../fonts/PlayfairDisplay-Italic.woff");
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src: local("Gotham Pro"), url("../fonts/GothamPro-Light.woff2"),
+    url("../fonts/GothamPro-Light.woff");
+}
+
+$main-font: "Playfair Display";
+$main-font-bold: "Playfair Display Bold";
+$main-font-italic: "Playfair Display Italic";
+$font: "Gotham Pro";

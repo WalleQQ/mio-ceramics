@@ -1,0 +1,12 @@
+.contacts__list {
+  @include list-zeroing;
+  margin-bottom: 40px;
+}
+
+.contacts__content {
+  text-align: center;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 13px;
+  color: $basic-dark-black;
+}

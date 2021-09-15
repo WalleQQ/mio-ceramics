@@ -1,0 +1,124 @@
+.our-designs {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 93px;
+    height: 120px;
+    right: 0;
+    bottom: 0;
+    background: url("../img/our-designs/Vector.svg") no-repeat;
+  }
+}
+
+.our-designs__list {
+  @include list-zeroing;
+}
+
+.our-designs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-designs__item-content {
+  order: 2;
+  width: 100%;
+}
+
+.our-designs__image {
+  order: 1;
+  margin-bottom: 20px;
+}
+
+.our-designs__heading {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 30px;
+  color: $basic-dark-grey;
+}
+
+.our-designs__item:nth-child(even) .our-designs__heading {
+  text-align: right;
+}
+
+.our-designs__text {
+  text-align: left;
+  margin-bottom: 31px;
+}
+
+.our-designs__item:nth-child(even) .our-designs__text {
+  text-align: right;
+}
+
+.our-designs__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 131px;
+  }
+
+  &:last-child {
+    margin-bottom: 71px;
+  }
+}
+
+.our-design__link-icon {
+  margin-right: 30px;
+}
+
+.our-designs__button {
+  max-width: 140px;
+  text-align: left;
+  color: $basic-dark-grey;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.our-designs__button-show-more-wrapper {
+  position: relative;
+  padding-top: 160px;
+  margin-bottom: 70px;
+}
+
+.our-designs__button-show-more {
+  font-family: $main-font-bold;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  padding: 71px 59px 71px 60px;
+  background-color: inherit;
+}
+
+.our-designs__button-show-more:disabled {
+  opacity: 0.3;
+}
+
+.our-designs__button-link-shop {
+  font-family: $main-font-bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 44px 30px;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 160px;
+  background-color: $basic-dark-grey;
+}

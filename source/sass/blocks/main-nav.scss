@@ -1,0 +1,142 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid $basic-black;
+  margin-bottom: 20px;
+}
+
+.main-nav__toggle {
+  order: -1;
+  position: relative;
+  cursor: pointer;
+  background: $basic-white;
+  width: 22px;
+  height: 22px;
+}
+
+.main-nav__toggle-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 2px;
+  border: none;
+  background-color: $basic-dark-black;
+  transition: 0.5s;
+  border-radius: 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: $basic-dark-black;
+    border-radius: 10px;
+  }
+
+  &::before {
+    content: "";
+    bottom: 6px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    bottom: -6px;
+    left: 0;
+  }
+}
+
+.main-nav__form-input {
+  display: none;
+}
+
+.main-nav__form-button {
+  border: none;
+  background: $basic-white;
+}
+
+.main-nav__menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  padding: 40px 20px 58px 20px;
+  background: url("../../img/main-nav/background-menu.svg") no-repeat 50% 100%;
+  text-align: center;
+
+  &--nojs {
+    display: block;
+    position: relative;
+    top: -20px;
+  }
+}
+
+.main-nav__menu--show-menu {
+  display: block;
+}
+
+.main-nav__menu-list {
+  @include list-zeroing;
+}
+
+.main-nav__menu-item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+.main-nav__menu-item-link {
+  font-family: $main-font-italic;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: $basic-white;
+}
+
+.main-nav__menu-button-close {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 2px solid $basic-white;
+  background-color: $basic-dark-grey;
+  transform: rotate(25deg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: $basic-white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    width: 20px;
+    height: 2px;
+    background-color: $basic-white;
+  }
+}
