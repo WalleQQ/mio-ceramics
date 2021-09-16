@@ -65,6 +65,38 @@
   background: $basic-white;
 }
 
+.main-nav__likes,
+.main-nav__cart {
+  position: relative;
+  width: 27px;
+  height: 24px;
+}
+
+.main-nav__likes-icon,
+.main-nav__cart-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-nav__likes-count,
+.main-nav__cart-count {
+  box-sizing: border-box;
+  padding: 4px 5px;
+  font-family: $font;
+  font-size: 6px;
+  line-height: 6px;
+  color: $basic-dark-black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid $basic-dark-grey;
+  background-color: $basic-white;
+}
+
 .main-nav__menu {
   display: none;
   position: absolute;
@@ -74,7 +106,7 @@
   left: 0;
   width: 100%;
   padding: 40px 20px 58px 20px;
-  background: url("../../img/main-nav/background-menu.svg") no-repeat 50% 100%;
+  background: url("../img/main-nav/background-menu.svg") no-repeat 50% 100%;
   text-align: center;
 
   &--nojs {
