@@ -40,7 +40,64 @@
     url("../fonts/GothamPro-Light.woff");
 }
 
+@font-face {
+  font-family: "Gotham Pro Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+
+  src: local("Gotham Pro Light"), url("../fonts/GothamPro-Light.woff2"),
+    url("../fonts/GothamPro-Light.woff");
+}
+
+@font-face {
+  font-family: "Gotham Pro Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+
+  src: local("Gotham Pro Medium"), url("../fonts/GothamPro-Medium.woff2"),
+    url("../fonts/GothamPro-Medium.woff");
+}
+
+@font-face {
+  font-family: "Gotham Pro Light Italic";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+
+  src: local("Gotham Pro Light Italic"),
+    url("../fonts/GothamPro-LightItalic.woff2"),
+    url("../fonts/GothamPro-LightItalic.woff");
+}
+
+@font-face {
+  font-family: "Gotham Pro Medium Italic";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+
+  src: local("Gotham Pro Medium Italic"),
+    url("../fonts/GothamPro-MediumItalic.woff2"),
+    url("../fonts/GothamPro-MediumItalic.woff");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+
+  src: local("Roboto Light"), url("../fonts/roboto-light.woff2"),
+    url("../fonts/roboto-light.woff");
+}
+
 $main-font: "Playfair Display";
 $main-font-bold: "Playfair Display Bold";
 $main-font-italic: "Playfair Display Italic";
 $font: "Gotham Pro";
+$font-light: "Gotham Pro Light";
+$font-medium: "Gotham Pro Medium";
+$font-light-italic: "Gotham Pro Light Italic";
+$font-medium-italic: "Gotham Pro Medium Italic";
+$font-roboto-light: "Roboto Light";

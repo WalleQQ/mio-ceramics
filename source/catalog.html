@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет магазин МиоКерамика</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo-link" href="index.html">
+            <img
+              class="main-nav__logo"
+              src="img/main-nav/Group.svg"
+              alt="МиоКерамика"
+              width="115"
+              height="10"
+            />
+          </a>
+          <div class="main-nav__likes">
+            <a href="#" class="main-nav__likes-link">
+              <img
+                class="main-nav__likes-icon"
+                src="img/main-nav/likes.svg"
+                alt="Иконка понравившихся дизайнов"
+                width="20"
+                height="20"
+              />
+              <span class="main-nav__likes-count">1</span>
+            </a>
+          </div>
+          <div class="main-nav__cart">
+            <a href="#" class="main-nav__cart-link">
+              <img
+                class="main-nav__cart-icon"
+                src="img/main-nav/cart.svg"
+                alt="Иконка корзины"
+                width="20"
+                height="20"
+              />
+              <span class="main-nav__cart-count">1</span>
+            </a>
+          </div>
+          <div class="main-nav__toggle">
+            <div class="main-nav__toggle-item"></div>
+          </div>
+          <form class="main-nav__form" action="post">
+            <input class="main-nav__form-input" type="text" />
+            <button class="main-nav__form-button" type="submit">
+              <img
+                class="main-nav__form-button-icon"
+                src="img/main-nav/search.svg"
+                alt="Иконка поиска"
+                width="20"
+                height="20"
+              />
+            </button>
+          </form>
+        </div>
+        <div class="main-nav__menu main-nav__menu--nojs">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Дизайн</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Контакты</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">Гарантии</a>
+            </li>
+          </ul>
+          <button
+            class="main-nav__menu-button-close button"
+            type="button"
+          ></button>
+        </div>
+      </nav>
+    </header>
+    <main class="page-catalog wrapper">
+      <h1 class="visually-hidden">Каталог</h1>
+
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__item-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__item-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item-current">
+          <a class="breadcrumbs__item-link">Керамогранит</a>
+        </li>
+      </ul>
+      <section class="porcelain-stoneware">
+        <h2 class="porcelain-stoneware__title">Керамогранит</h2>
+        <div class="porcelain-stoneware__collections">
+          <h3
+            class="porcelain-stoneware__collections-title page-catalog__title"
+          >
+            Коллекции
+          </h3>
+          <ul class="porcelain-stoneware__collections-list">
+            <li class="porcelain-stoneware__collections-item">
+              <a href="#" class="porcelain-stoneware__collections-link"
+                >AGATA</a
+              >
+            </li>
+            <li class="porcelain-stoneware__collections-item">
+              <a href="#" class="porcelain-stoneware__collections-link"
+                >BIARRITZ</a
+              >
+            </li>
+            <li class="porcelain-stoneware__collections-item">
+              <a href="#" class="porcelain-stoneware__collections-link"
+                >Les Bijoux De Rex</a
+              >
+            </li>
+            <li class="porcelain-stoneware__collections-item">
+              <a href="#" class="porcelain-stoneware__collections-link"
+                >BLOOM</a
+              >
+            </li>
+            <li class="porcelain-stoneware__collections-item">
+              <a href="#" class="porcelain-stoneware__collections-link"
+                >Les Bijoux De Rex</a
+              >
+            </li>
+            <li class="porcelain-stoneware__collections-item">
+              <a href="#" class="porcelain-stoneware__collections-link"
+                >BLOOM</a
+              >
+            </li>
+          </ul>
+          <ul class="porcelain-stoneware__collections-button-list">
+            <li class="porcelain-stoneware__collections-button-item">
+              <button
+                class="porcelain-stoneware__collections-button-open-all"
+                type="button"
+              >
+                Открыть все
+              </button>
+            </li>
+            <li class="porcelain-stoneware__collections-button-item">
+              <button
+                class="porcelain-stoneware__collections-button-close-all"
+                type="button"
+              >
+                Закрыть
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products">
+        <h3 class="products__title page-catalog__title">Товары</h3>
+        <div class="products__filter">
+          <ul class="products__filter-list">
+            <li class="products__filter-item">
+              <button
+                class="products__filter-button products__filter-button--current"
+                type="button"
+              >
+                Популярное
+              </button>
+            </li>
+            <li class="products__filter-item">
+              <button class="products__filter-button" type="button">
+                Цена
+              </button>
+            </li>
+          </ul>
+          <ul class="products__pages-list">
+            <li class="products__pages-item">
+              <button
+                class="products__pages-button products__pages-button--current"
+              >
+                18
+              </button>
+            </li>
+            <li class="products__pages-item">
+              <button class="products__pages-button">36</button>
+            </li>
+            <li class="products__pages-item">
+              <button class="products__pages-button">72</button>
+            </li>
+          </ul>
+        </div>
+        <ul class="products__list">
+          <li class="products__item">
+            <img
+              class="products__item-image"
+              src="img/products/product-1.jpg"
+              alt="Изображение плитки песочного цвета"
+              width="230"
+              height="230"
+            />
+            <p class="products__item-heading">
+              Керамогранит 20*20 Havana Sugar Cane
+            </p>
+            <ul class="products__item-info-list">
+              <li class="products__item-info-item">
+                <p class="products__item-info">
+                  Бренд: <span class="products__item-info-bold">CIR</span>
+                </p>
+              </li>
+              <li class="products__item-info-item">
+                <p class="products__item-info">
+                  Коллекция:
+                  <span class="products__item-info-bold">Havana</span>
+                </p>
+              </li>
+              <li class="products__item-info-item">
+                <p class="products__item-info">
+                  Страна: <span class="products__item-info-bold">Италия</span>
+                </p>
+              </li>
+            </ul>
+            <ul class="products__price-list">
+              <li class="products__price-item">
+                <p class="products__price-item-text">
+                  4 490<span class="products__price-item-text-currency">₽</span>
+                </p>
+              </li>
+              <li class="products__price-item">
+                <p class="products__price-item-m-text">
+                  4 317<span class="products__price-item-m-text-currency"
+                    >₽/м</span
+                  >
+                </p>
+              </li>
+            </ul>
+            <button class="products__cart-button" type="button"></button>
+          </li>
+          <li class="products__item">
+            <img
+              class="products__item-image"
+              src="img/products/product-1.jpg"
+              alt="Изображение плитки песочного цвета"
+              width="230"
+              height="230"
+            />
+            <p class="products__item-heading">
+              Керамогранит 20*20 Havana Sugar Cane
+            </p>
+            <ul class="products__item-info-list">
+              <li class="products__item-info-item">
+                <p class="products__item-info">
+                  Бренд: <span class="products__item-info-bold">CIR</span>
+                </p>
+              </li>
+              <li class="products__item-info-item">
+                <p class="products__item-info">
+                  Коллекция:
+                  <span class="products__item-info-bold">Havana</span>
+                </p>
+              </li>
+              <li class="products__item-info-item">
+                <p class="products__item-info">
+                  Страна: <span class="products__item-info-bold">Италия</span>
+                </p>
+              </li>
+            </ul>
+            <ul class="products__price-list">
+              <li class="products__price-item">
+                <p class="products__price-item-text">
+                  4 490<span class="products__price-item-text-currency">₽</span>
+                </p>
+              </li>
+              <li class="products__price-item">
+                <p class="products__price-item-m-text">
+                  4 317<span class="products__price-item-m-text-currency"
+                    >₽/м</span
+                  >
+                </p>
+              </li>
+            </ul>
+            <button class="products__cart-button" type="button"></button>
+          </li>
+        </ul>
+
+        <ul class="products__pagination-list">
+          <li
+            class="products__pagination-item products__pagination-item--current"
+          >
+            <a href="#" class="products__pagination-link">1</a>
+          </li>
+          <li class="products__pagination-item">
+            <a href="#" class="products__pagination-link">2</a>
+          </li>
+          <li class="products__pagination-item">
+            <a href="#" class="products__pagination-link">3</a>
+          </li>
+          <li
+            class="
+              products__pagination-item products__pagination-item--bordernone
+            "
+          >
+            <a href="#" class="products__pagination-link">...</a>
+          </li>
+          <li class="products__pagination-item">
+            <a href="#" class="products__pagination-link">6</a>
+          </li>
+          <li class="products__pagination-item">
+            <a href="#" class="products__pagination-link">7</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper">
+        <section class="contacts">
+          <h3 class="contacts__title page-footer__title">Контакты</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__content">
+                <a class="contacts__link" href="tel:88314205010"
+                  >Единый телефон: 8 (831) 420 - 50 - 10</a
+                >
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__content">
+                <a class="contacts__link" href="mailto:miokeramika@mail.ru"
+                  >E-mail: miokeramika@mail.ru</a
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="addresses">
+          <h3 class="page-footer__title">Адреса магазинов</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">ул. Пискунова, 21/2</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">ул. Ижорская, 18</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">ул. Белинского, 11/66</p>
+            </li>
+          </ul>
+        </section>
+        <section class="working-hours">
+          <h3 class="page-footer__title">Время работы</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">Пн - Пт: 10:00 - 19:00</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">Сб: 10:00 - 18:00</p>
+            </li>
+            <li class="page-footer__item">
+              <p class="page-footer__item-content">Вс: выходной</p>
+            </li>
+          </ul>
+        </section>
+        <section class="socials">
+          <h3 class="visually-hidden">Мы в социальных сетях</h3>
+          <div class="socials__item">
+            <a href="#" class="socials__item-link">
+              <p class="socials__text">Мы в Instagram</p>
+              <img
+                src="img/socials/instagram.svg"
+                alt="Instagram"
+                class="socials__icon"
+                width="20"
+                height="20"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="copyright">
+          <h3 class="visually-hidden">Авторское право</h3>
+          <a href="" class="copyright__confidentiality-link"
+            ><p class="copyright__confidentiality-text">
+              Политика коденфициальности
+            </p></a
+          >
+          <p class="copyright__content">© 2009 - 2021 Миокерамика</p>
+        </section>
+        <section class="page-footer__menu">
+          <h3 class="visually-hidden">Навигация по меню</h3>
+          <nav class="page-footer__nav">
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Главная</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Каталог</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Дизайн</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Доставка</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Гарантии</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">О нас</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="#" class="page-footer__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.breadcrumbs {
+  @include list-zeroing;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  font-family: $font;
+  font-size: 11px;
+  line-height: 11px;
+  color: $basic-dark-black;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -5px;
+      height: 100%;
+      width: 1px;
+      background-color: $basic-dark-black;
+      transform: rotate(20deg);
+    }
+  }
+}
